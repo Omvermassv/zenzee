@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import sty from "./login.module.css";
 
-function Login() {
+function Register() {
   return (
     <div className={sty.Wrapper}>
       <div className={sty.container}>
@@ -13,16 +13,20 @@ function Login() {
           </div>
           <div className={sty.inputContainer}>
             <div className={sty.heading}>
-              <p>Login</p>
+              <p>Register</p>
             </div>
-            <label className={sty.inputL, sty.input} htmlFor="username">User Name</label>
-            <input className={sty.inputL, sty.input, sty.in} type="text" id="username" />
+            <label className={sty.inputL, sty.input} htmlFor="fName">Full Name</label>
+            <input className={sty.inputL, sty.input, sty.in} type="text" id="fName" />
+            <label className={sty.inputL, sty.input} htmlFor="useremail">Email</label>
+            <input className={sty.inputL, sty.input, sty.in} type="email" id="useremail" />
             <label className={sty.inputL, sty.input} htmlFor="userpassword">Password</label>
             <input className={sty.inputL, sty.input, sty.in} type="password" id="userpassword" />
-            <button className={sty.btn}>Login</button>
+            <label className={sty.inputL, sty.input} htmlFor="userconfirmpassword">Confirm Password</label>
+            <input className={sty.inputL, sty.input, sty.in} type="password" id="userconfirmpassword" />
+            <button className={sty.btn}>Register</button>
           </div>
           <div className={sty.textlink}>
-          <p>Do not Have Account <Link to="/Register"><span>Register</span></Link></p>
+            <p>Already have an Account <Link to="/"><span>Login</span></Link></p>
           </div>
         </div>
       </div>
@@ -30,4 +34,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
