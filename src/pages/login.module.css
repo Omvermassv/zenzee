@@ -45,7 +45,7 @@
 }
 .input{
     width: 100%;
-    margin: 4px;
+    margin: px;
     padding: 10px 20px;
 }
 .inputL{
@@ -81,11 +81,9 @@ border-radius: 10px;
 .instructions {
     font-size: 0.75rem;
     border-radius: 0.5rem;
-    background: #000;
     color: #fff;
-    padding: 0.25rem;
+    padding: 0.5rem;
     position: relative;
-    bottom: -10px;
 }
 
 .instructions > svg {
