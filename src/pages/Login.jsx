@@ -15,14 +15,14 @@ function Login() {
             <div className={sty.heading}>
               <p>Login</p>
             </div>
-            <label className={sty.inputL, sty.input} htmlFor="username">User Name</label>
-            <input className={sty.inputL, sty.input, sty.in} type="text" id="username" />
-            <label className={sty.inputL, sty.input} htmlFor="userpassword">Password</label>
-            <input className={sty.inputL, sty.input, sty.in} type="password" id="userpassword" />
+            <label className={`${sty.inputL} ${sty.input}`} htmlFor="username">User Name</label>
+            <input className={`${sty.inputL} ${sty.input} ${sty.in}`} type="text" id="username" />
+            <label className={`${sty.inputL} ${sty.input}`} htmlFor="userpassword">Password</label>
+            <input className={`${sty.inputL} ${sty.input} ${sty.in}`} type="password" id="userpassword" />
             <button className={sty.btn}>Login</button>
           </div>
           <div className={sty.textlink}>
-          <p>Do not Have Account <Link to="/Register"><span>Register</span></Link></p>
+            <p>Do not Have Account <Link to="/Register"><span>Register</span></Link></p>
           </div>
         </div>
       </div>

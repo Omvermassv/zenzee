@@ -8,7 +8,8 @@ import sty from "./login.module.css";
 const NAME_REGEX = /^[a-zA-Z ]{2,20}$/;
 const EMAIL_REGEX = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,15}$/;
-const REGISTER_URL = '/register';
+
+// const REGISTER_URL = '/register';
 
 function Register() {
 	const userRef = useRef();
@@ -77,12 +78,12 @@ function Register() {
 						</div>
 						<form onSubmit={handleSubmit}>
 							<label
-								className={sty.inputL, sty.input}
+								className={`${sty.inputL} ${sty.input}`}
 								htmlFor="fullname">
 								Full Name
 							</label>
 							<input
-								className={sty.inputL, sty.input, sty.in}
+								className={`${sty.inputL} ${sty.input} ${sty.in}`}
 								type="text" id="fullname"
 								ref={userRef}
 								onChange={(e) => setName(e.target.value)}
@@ -98,12 +99,12 @@ function Register() {
 								Only alphabets allowed between 2 to 20 characters.
 							</p>
 							<label
-								className={sty.inputL, sty.input}
+								className={`${sty.inputL} ${sty.input}`}
 								htmlFor="useremail">
 								Email
 							</label>
 							<input
-								className={sty.inputL, sty.input, sty.in}
+								className={`${sty.inputL} ${sty.input} ${sty.in}`}
 								type="email"
 								id="useremail"
 								onChange={(e) => setEmail(e.target.value)}
@@ -117,12 +118,12 @@ function Register() {
 								<FontAwesomeIcon icon={faInfoCircle} />
 								Enter a valid email syntax.
 							</p>
-							<label className={sty.inputL, sty.input}
+							<label className={`${sty.inputL} ${sty.input}`}
 								htmlFor="password">
 								Password
 							</label>
 							<input
-								className={sty.inputL, sty.input, sty.in}
+								className={`${sty.inputL} ${sty.input} ${sty.in}`}
 								type="password"
 								id="password"
 								onChange={(e) => setPwd(e.target.value)}
@@ -137,12 +138,12 @@ function Register() {
 								8 to 15 characters. Must include uppercase and lowercase letters, a number and a special character.
 							</p>
 							<label
-								className={sty.inputL, sty.input}
+								className={`${sty.inputL} ${sty.input}`}
 								htmlFor="confirm_password">
 								Confirm Password
 							</label>
 							<input
-								className={sty.inputL, sty.input, sty.in}
+								className={`${sty.inputL} ${sty.input} ${sty.in}`}
 								type="password"
 								id="confirm_password"
 								onChange={(e) => setMatchPwd(e.target.value)}
